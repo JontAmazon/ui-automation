@@ -1,0 +1,15 @@
+{
+  "name": "ui-automation-playwright",
+  "version": "1.0.0",
+  "description": "Playwright UI automation suite for Automation Exercise test cases.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
