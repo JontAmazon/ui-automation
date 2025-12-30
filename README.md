@@ -62,11 +62,6 @@ Run the full suite headless:
 
 ```bash
 npm test
-```
-
-Run tests headed for debugging:
-
-```bash
 npm run test:headed
 ```
 
