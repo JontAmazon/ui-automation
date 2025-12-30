@@ -1,25 +1,7 @@
 import { test } from '../fixtures/test-fixtures.js';
 import { REQUIRED_FIELDS } from '../../pages/account-creation-page.js';
 
-async function fillSignupForm({ accountCreationPage, user, formOptions = {} }) {
-  await accountCreationPage.expectAccountFormVisible();
-  await accountCreationPage.fillForm(user, formOptions);
-}
-
-async function submitSignupForm({
-  accountCreationPage,
-  accountCreatedPage,
-  accountDeletedPage,
-  user, // full user data - email, password, address, etc.
-  cleanup = true,
-}) {
-  await accountCreationPage.submitAccount();
-
-  await accountCreatedPage.expectOnPage();
-  await accountCreatedPage.expectAccountCreated();
-  await accountCreatedPage.continue();
-  await accountCreatedPage.navBar.expectLoggedInAs(user.firstName);
-
+async function cleanup({ accountCreatedPage, accountDeletedPage, cleanup = true }) {
   if (cleanup) {
     await accountCreatedPage.deleteAccount();
     await accountDeletedPage.expectAccountDeleted();
@@ -29,34 +11,28 @@ async function submitSignupForm({
 
 test.describe('Register User', () => {
   test('Signup with all fields', async ({
-    openSignupLoginPage,
-    accountCreationPage,
-    accountCreatedPage,
-    accountDeletedPage,
-    user, // full user data
+    openSignupLoginPage, accountCreationPage, accountCreatedPage, accountDeletedPage, user, // full user data
   }) => {
     await openSignupLoginPage.startSignup(user);
-    await fillSignupForm({ accountCreationPage, user });
-    await submitSignupForm({ accountCreationPage, accountCreatedPage, accountDeletedPage, user });
+    await accountCreationPage.fillForm(user);
+    await accountCreationPage.submitAccount();
+    await accountCreatedPage.verifySignupSuccessful(user.firstName);
+    await cleanup({ accountCreatedPage, accountDeletedPage });
   });
-
+  
   test('Signup with required fields only', async ({
-    openSignupLoginPage,
-    accountCreationPage,
-    accountCreatedPage,
-    accountDeletedPage,
-    user, // full user data
+    openSignupLoginPage, accountCreationPage, accountCreatedPage, accountDeletedPage, user, // full user data
   }) => {
     await openSignupLoginPage.startSignup(user);
-    await fillSignupForm({ accountCreationPage, user, formOptions: { requiredOnly: true } });
-    await submitSignupForm({ accountCreationPage, accountCreatedPage, accountDeletedPage, user });
+    await accountCreationPage.fillForm(user, { requiredOnly: true });
+    await accountCreationPage.submitAccount();
+    await accountCreatedPage.verifySignupSuccessful(user.firstName);
+    await cleanup({ accountCreatedPage, accountDeletedPage });
   });
 
   test('Visible input alerts when required fields are missing', async ({
-    /* 'please fill out this field' should be shown when a required field is missing. */
-    openSignupLoginPage,
-    accountCreationPage,
-    user,
+    /* alert: "please fill out this field" should be shown when a required field is missing. */
+    openSignupLoginPage, accountCreationPage, user, // full user data
   }) => {
     await openSignupLoginPage.startSignup(user);
     await accountCreationPage.expectAccountFormVisible();

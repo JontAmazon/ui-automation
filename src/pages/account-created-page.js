@@ -23,6 +23,13 @@ export class AccountCreatedPage {
     await this.continueButton.click();
   }
 
+  async verifySignupSuccessful(userFirstName) {
+    await this.expectOnPage();
+    await this.expectAccountCreated();
+    await this.continue();
+    await this.navBar.expectLoggedInAs(userFirstName);
+  }
+
   async deleteAccount() {
     await this.deleteAccountLink.click();
   }

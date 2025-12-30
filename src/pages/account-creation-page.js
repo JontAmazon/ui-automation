@@ -70,6 +70,8 @@ export class AccountCreationPage {
       return requiredFields.has(field);
     };
 
+    await this.expectAccountFormVisible();
+
     if (shouldFill('title')) {
       await this.titleMr.check();
     }
