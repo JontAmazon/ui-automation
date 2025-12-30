@@ -19,13 +19,9 @@ const loginUser = {
 test.describe('Login flows', () => {
   test('Login User with correct email and password', async ({
     homePage,
-    signupLoginPage,
+    openSignupLoginPage,
   }) => {
-    await homePage.goto();
-    await homePage.openSignupLogin();
-
-    await signupLoginPage.expectVisible();
-    await signupLoginPage.login(loginUser);
+    await openSignupLoginPage.login(loginUser);
 
     await homePage.expectOnPage();
     await homePage.navBar.expectLoggedIn();
@@ -34,30 +30,21 @@ test.describe('Login flows', () => {
   });
 
   test('Login User with incorrect email and password', async ({
-    homePage,
-    signupLoginPage,
+    openSignupLoginPage,
   }) => {
     const invalid = buildInvalidCredentials();
-    await homePage.goto();
-    await homePage.openSignupLogin();
-
-    await signupLoginPage.expectVisible();
-    await signupLoginPage.loginWith(invalid.email, invalid.password);
-    await signupLoginPage.expectInvalidLoginAlert();
+    await openSignupLoginPage.loginWith(invalid.email, invalid.password);
+    await openSignupLoginPage.expectInvalidLoginAlert();
   });
 
-  test('Logout User', async ({ homePage, signupLoginPage }) => {
-    await homePage.goto();
-    await homePage.openSignupLogin();
-
-    await signupLoginPage.expectVisible();
-    await signupLoginPage.login(loginUser);
+  test('Logout User', async ({ homePage, openSignupLoginPage }) => {
+    await openSignupLoginPage.login(loginUser);
     await homePage.navBar.expectLoggedIn();
     await homePage.navBar.expectLoggedInAs(validName);
 
     await homePage.navBar.logout();
-    await signupLoginPage.navBar.expectNotLoggedInAs(validName);
-    await signupLoginPage.expectOnPage();
-    await signupLoginPage.expectVisible();
+    await openSignupLoginPage.navBar.expectNotLoggedInAs(validName);
+    await openSignupLoginPage.expectOnPage();
+    await openSignupLoginPage.expectVisible();
   });
 });

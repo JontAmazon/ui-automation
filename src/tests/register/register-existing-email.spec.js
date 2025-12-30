@@ -14,15 +14,9 @@ const existingUser = {
 
 test.describe('Register User with existing email', () => {
   test('Should block registration when email already exists', async ({
-    homePage,
-    signupLoginPage,
+    openSignupLoginPage,
   }) => {
-    await homePage.goto();
-    await homePage.expectHomeVisible();
-    await homePage.openSignupLogin();
-
-    await signupLoginPage.expectVisible();
-    await signupLoginPage.signup(existingUser);
-    await signupLoginPage.expectExistingEmailAlert();
+    await openSignupLoginPage.startSignup(existingUser);
+    await openSignupLoginPage.expectExistingEmailAlert();
   });
 });

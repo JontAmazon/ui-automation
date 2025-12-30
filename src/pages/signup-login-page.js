@@ -26,7 +26,7 @@ export class SignupLoginPage {
     await expect(this.page).toHaveURL(this.url);
   }
 
-  async signup(user) {
+  async startSignup(user) {
     await this.signupName.fill(user.firstName);
     await this.signupEmail.fill(user.email);
     await this.signupButton.click();

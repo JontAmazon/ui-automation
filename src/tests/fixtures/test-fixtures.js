@@ -13,6 +13,13 @@ export const test = base.extend({
   signupLoginPage: async ({ page }, use) => {
     await use(new SignupLoginPage(page));
   },
+  openSignupLoginPage: async ({ homePage, signupLoginPage }, use) => {
+    await homePage.goto();
+    await homePage.expectHomeVisible();
+    await homePage.openSignupLogin();
+    await signupLoginPage.expectVisible();
+    await use(signupLoginPage);
+  },
   accountCreationPage: async ({ page }, use) => {
     await use(new AccountCreationPage(page));
   },
