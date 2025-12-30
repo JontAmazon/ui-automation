@@ -4,18 +4,16 @@ Playwright UI automation test suite.
 
 Application under test: https://www.automationexercise.com/
 
-
 ## Test Coverage:
 1. Register User
-    - sign up with all fields
-    - sign up with required fields only
+    - with all fields
+    - with required fields only
     - visible input alerts when required fields are missing
-2. Register User with existing email
-3. Login User with correct email and password
-4. Login User with incorrect email and password
-5. Logout User
-
-Test cases 2, 3, and 5 use an existing account, credentials must be set in .env.
+    - with already existing email
+2. Login:
+    - with correct email and password
+    - with incorrect email and password
+    - logout
 
 ## Project structure
 
@@ -55,8 +53,8 @@ npm install
 npx playwright install --with-deps
 ```
 
-## Set environment variables
-Before running tests, register a new user [here](https://www.automationexercise.com/login). Then create .env and configure email, password, and name. (See .env.example).
+### Set environment variables
+Before running tests, register a new user [here](https://www.automationexercise.com/login). Then create .env and configure email, password, and name (see .env.example). These credentials will be used in all test cases featuring an already existing/correct account.
 
 ## Running tests
 
