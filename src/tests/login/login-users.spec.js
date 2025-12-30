@@ -17,10 +17,7 @@ const loginUser = {
 };
 
 test.describe('Login flows', () => {
-  test('Login User with correct email and password', async ({
-    homePage,
-    openSignupLoginPage,
-  }) => {
+  test('Login User with correct email and password', async ({ homePage, openSignupLoginPage }) => {
     await openSignupLoginPage.login(loginUser);
 
     await homePage.expectOnPage();
@@ -29,9 +26,7 @@ test.describe('Login flows', () => {
     await homePage.navBar.logout();
   });
 
-  test('Login User with incorrect email and password', async ({
-    openSignupLoginPage,
-  }) => {
+  test('Login User with incorrect email and password', async ({ openSignupLoginPage }) => {
     const invalid = buildInvalidCredentials();
     await openSignupLoginPage.loginWith(invalid.email, invalid.password);
     await openSignupLoginPage.expectInvalidLoginAlert();

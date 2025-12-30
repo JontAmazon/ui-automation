@@ -62,11 +62,6 @@ Run the full suite headless:
 
 ```bash
 npm test
-```
-
-Run tests headed for debugging:
-
-```bash
 npm run test:headed
 ```
 
@@ -79,4 +74,3 @@ npm run test:report
 ## CI
 
 GitHub Actions runs on every push and pull request. It installs dependencies, runs the Playwright suite, and uploads the HTML report as a build artifact.
-

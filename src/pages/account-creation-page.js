@@ -3,6 +3,7 @@ export const REQUIRED_FIELDS = [
   'firstName',
   'lastName',
   'address1',
+  // 'country', // required, but always has a value, e.g. default
   'state',
   'city',
   'zipCode',
@@ -49,11 +50,7 @@ export class AccountCreationPage {
 
   async fillForm(user, { requiredOnly = false, omitField } = {}) {
     const requiredFields = new Set([
-      'title',
       'password',
-      'day',
-      'month',
-      'year',
       'firstName',
       'lastName',
       'address1',
