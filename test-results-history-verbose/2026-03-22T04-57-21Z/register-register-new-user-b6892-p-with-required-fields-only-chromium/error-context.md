@@ -1,0 +1,473 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for practice automation" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for practice automation" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - heading "Enter Account Information" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Title
+          - generic [ref=e47]:
+            - radio "Mr." [checked] [ref=e49]
+            - text: Mr.
+          - generic [ref=e51]:
+            - radio "Mrs." [ref=e53]
+            - text: Mrs.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - text: Name
+            - superscript [ref=e56]: "*"
+          - textbox "Name *" [ref=e57]: Jonatanruu
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - text: Email
+            - superscript [ref=e60]: "*"
+          - textbox "Email *" [disabled] [ref=e61]: jonatanruu.qawxm+1774155387588@example.com
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - text: Password
+            - superscript [ref=e64]: "*"
+          - textbox "Password *" [ref=e65]: P@ssw0rd805
+        - generic [ref=e66]:
+          - generic [ref=e67]: Date of Birth
+          - generic [ref=e68]:
+            - combobox [ref=e71]:
+              - option "Day"
+              - option "1"
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+              - option "13"
+              - option "14"
+              - option "15"
+              - option "16"
+              - option "17"
+              - option "18"
+              - option "19"
+              - option "20" [selected]
+              - option "21"
+              - option "22"
+              - option "23"
+              - option "24"
+              - option "25"
+              - option "26"
+              - option "27"
+              - option "28"
+              - option "29"
+              - option "30"
+              - option "31"
+            - combobox [ref=e74]:
+              - option "Month"
+              - option "January"
+              - option "February" [selected]
+              - option "March"
+              - option "April"
+              - option "May"
+              - option "June"
+              - option "July"
+              - option "August"
+              - option "September"
+              - option "October"
+              - option "November"
+              - option "December"
+            - combobox [ref=e77]:
+              - option "Year"
+              - option "2021"
+              - option "2020"
+              - option "2019"
+              - option "2018"
+              - option "2017"
+              - option "2016"
+              - option "2015"
+              - option "2014"
+              - option "2013"
+              - option "2012"
+              - option "2011"
+              - option "2010"
+              - option "2009"
+              - option "2008"
+              - option "2007"
+              - option "2006"
+              - option "2005"
+              - option "2004"
+              - option "2003"
+              - option "2002"
+              - option "2001"
+              - option "2000"
+              - option "1999"
+              - option "1998"
+              - option "1997"
+              - option "1996"
+              - option "1995"
+              - option "1994" [selected]
+              - option "1993"
+              - option "1992"
+              - option "1991"
+              - option "1990"
+              - option "1989"
+              - option "1988"
+              - option "1987"
+              - option "1986"
+              - option "1985"
+              - option "1984"
+              - option "1983"
+              - option "1982"
+              - option "1981"
+              - option "1980"
+              - option "1979"
+              - option "1978"
+              - option "1977"
+              - option "1976"
+              - option "1975"
+              - option "1974"
+              - option "1973"
+              - option "1972"
+              - option "1971"
+              - option "1970"
+              - option "1969"
+              - option "1968"
+              - option "1967"
+              - option "1966"
+              - option "1965"
+              - option "1964"
+              - option "1963"
+              - option "1962"
+              - option "1961"
+              - option "1960"
+              - option "1959"
+              - option "1958"
+              - option "1957"
+              - option "1956"
+              - option "1955"
+              - option "1954"
+              - option "1953"
+              - option "1952"
+              - option "1951"
+              - option "1950"
+              - option "1949"
+              - option "1948"
+              - option "1947"
+              - option "1946"
+              - option "1945"
+              - option "1944"
+              - option "1943"
+              - option "1942"
+              - option "1941"
+              - option "1940"
+              - option "1939"
+              - option "1938"
+              - option "1937"
+              - option "1936"
+              - option "1935"
+              - option "1934"
+              - option "1933"
+              - option "1932"
+              - option "1931"
+              - option "1930"
+              - option "1929"
+              - option "1928"
+              - option "1927"
+              - option "1926"
+              - option "1925"
+              - option "1924"
+              - option "1923"
+              - option "1922"
+              - option "1921"
+              - option "1920"
+              - option "1919"
+              - option "1918"
+              - option "1917"
+              - option "1916"
+              - option "1915"
+              - option "1914"
+              - option "1913"
+              - option "1912"
+              - option "1911"
+              - option "1910"
+              - option "1909"
+              - option "1908"
+              - option "1907"
+              - option "1906"
+              - option "1905"
+              - option "1904"
+              - option "1903"
+              - option "1902"
+              - option "1901"
+              - option "1900"
+        - generic [ref=e78]:
+          - checkbox "Sign up for our newsletter!" [ref=e79]
+          - text: Sign up for our newsletter!
+        - generic [ref=e80]:
+          - checkbox "Receive special offers from our partners!" [ref=e81]
+          - text: Receive special offers from our partners!
+        - heading "Address Information" [level=2] [ref=e82]
+        - paragraph [ref=e83]:
+          - generic [ref=e84]:
+            - text: First name
+            - superscript [ref=e85]: "*"
+          - textbox "First name *" [ref=e86]: Jonatanruu
+        - paragraph [ref=e87]:
+          - generic [ref=e88]:
+            - text: Last name
+            - superscript [ref=e89]: "*"
+          - textbox "Last name *" [ref=e90]: QAwxm
+        - paragraph [ref=e91]:
+          - generic [ref=e92]: Company
+          - textbox "Company" [ref=e93]
+        - paragraph [ref=e94]:
+          - generic [ref=e95]:
+            - text: Address
+            - superscript [ref=e96]: "*"
+            - text: (Street address, P.O. Box, Company name, etc.)
+          - textbox "Address * (Street address, P.O. Box, Company name, etc.)" [ref=e97]: 96 Test Street
+        - paragraph [ref=e98]:
+          - generic [ref=e99]: Address 2
+          - textbox "Address 2" [ref=e100]
+        - paragraph [ref=e101]:
+          - generic [ref=e102]:
+            - text: Country
+            - superscript [ref=e103]: "*"
+          - combobox "Country *" [ref=e104]:
+            - option "India"
+            - option "United States" [selected]
+            - option "Canada"
+            - option "Australia"
+            - option "Israel"
+            - option "New Zealand"
+            - option "Singapore"
+        - paragraph [ref=e105]:
+          - generic [ref=e106]:
+            - text: State
+            - superscript [ref=e107]: "*"
+          - textbox "State *" [ref=e108]: Test State
+        - paragraph [ref=e109]:
+          - generic [ref=e110]:
+            - text: City
+            - superscript [ref=e111]: "*"
+          - textbox "City * Zipcode *" [ref=e112]: Malaga
+        - paragraph [ref=e113]:
+          - generic [ref=e114]:
+            - text: Zipcode
+            - superscript [ref=e115]: "*"
+          - textbox [ref=e116]: "14285"
+        - paragraph [ref=e117]:
+          - generic [ref=e118]:
+            - text: Mobile Number
+            - superscript [ref=e119]: "*"
+          - textbox "Mobile Number *" [ref=e120]: "+342068156901"
+        - button "Create Account" [ref=e121] [cursor=pointer]
+    - insertion [ref=e123]:
+      - iframe [ref=e125]:
+        - iframe [ref=f19e1]:
+          - iframe [ref=f27e3]:
+            - generic [ref=f28e2] [cursor=pointer]:
+              - link [ref=f28e4]:
+                - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+              - generic [ref=f28e5]:
+                - link [ref=f28e6]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                - generic [ref=f28e7]:
+                  - generic [ref=f28e8]: Your browser does not support the video tag.
+                  - link [ref=f28e9]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                  - img [ref=f28e11]
+                  - generic:
+                    - img
+                  - img [ref=f28e16]
+              - link [ref=f28e19]:
+                - /url: https://optout.rtbhouse.com/?utm_source=optout_icon&oot=_W7XZgq_WKPNcwaHcaZ3Y9J3kWiTmNDCyQDX7AMN7iLMa5Vyr21Sn3eN5M_U6QYFqUm46kF37j5daKOOeRxsQSwwW5LvR0RG0DCbJPqahzXr-xxQucTjoGlMOk_bIQvh&dsa_show=0&dsa_behalf=carfax.com
+                - img [ref=f28e20]
+              - generic [ref=f28e27]:
+                - generic [ref=f28e29]:
+                  - link [ref=f28e30]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                  - link [ref=f28e31]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3DODf0mfpiwBoscooqsQazq08pssETgQ4DwCQAlrCa3mt3SYWNTBxFlmpo6uf1-jR7S6y3MOuFu__79-gzRYHnRJVU0RK1vKaO_hjLWqRBaw7wHCSqt1X3w0ddyzy8O_iMGGvUgGMvblqvjZHzlnaE4jIyLkvBDq7pybcsDmxRu2X5qNDAlhQ1L4AjAd2jNoFRDmwuxTUD_9u_S1Puc-JcjfrQSVT4F7L-OqcGXI0nAKVU73XJwI7M3GMcS3BFTNPhdUXmhX-fLJCq8iz7JH-xvphoQQ3_f73xMMTeJsXudV8TQK-qT0bREA6jK3_-imKGQAYjaxd6LpLMdTfUZyElIfFA9InIJGM9g416tMwUXhx6r7bZWMDiRxis0UEobJePmykg4JHBTjKDd_5dHDneCL416t89JVa5lYtWI5m1Yek8PJj-a6qIyjKCqee41TLS-rd4sk-0waEVou2TvzOiWulf14EJDmD8_pqMUYnR9TGodfp4qTEfDPMkgfDz8hKLleyUhwwcsBjSTzV8-8Ut88DQ6GgKWB0Nq2eJ4k8qCAIRCyM9dY3Fw1NpMSNu2v_a
+                    - generic [ref=f28e39]:
+                      - generic:
+                        - generic:
+                          - generic: 2020 Jaguar F-Type
+                          - generic: 2020 Jaguar F-Type
+                      - generic [ref=f28e42]: ‎$32,999
+                      - generic [ref=f28e45]: Shop Now
+                - generic [ref=f28e47]:
+                  - link [ref=f28e48]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                  - link "1995 Jaguar XJ ‎$23,899 Shop Now" [ref=f28e49]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3DODf0mfpiwBoscooqsQazq08pssETgQ4DwCQAlrCa3mt3SYWNTBxFlmpo6uf1-jR7S6y3MOuFu__79-gzRYHnRJVU0RK1vKaO_hjLWqRBaw7wHCSqt1X3w0ddyzy8O_iMGGvUgGMvblqvjZHzlnaE4jIyLkvBDq7pybcsDmxRu2X5qNDAlhQ1L4AjAd2jNoFRDmwuxTUD_9u_S1Puc-JcjfrQSVT4F7L-OqcGXI0nAKVU73XJwI7M3GMcS3BFTNPhdUXmhX-fLJCq8iz7JH-xvphoQQ3_f73xMMTeJsXudV8TQK-qT0bREA6jK3_-imKGQAYjaxd6LpLMdTfUZyElIfFA9InIJGM9g416tMwUXhx6r7bZWMDiRxis0UEobJePmykg4JHBTjKDd_5dHDneCL416t89JVa5lYtWI5m1Yek8PJj-a6qIyjKCqee41TLS-rd4sk-0waEVou2TvzOiWulf14EJDmD8_pqMUYnR9TGodfp4qTEfDPMkgfDz8hKLleyUhwwcsBjSTzV8-8Ut81yhix9KVSDcD5Vw-PcyeG8TkV5b-t8XeWcpLhO8MYK9
+                    - generic [ref=f28e57]:
+                      - generic:
+                        - generic: 1995 Jaguar XJ
+                      - generic [ref=f28e60]: ‎$23,899
+                      - generic [ref=f28e63]: Shop Now
+                - generic [ref=f28e65]:
+                  - link [ref=f28e66]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                  - link [ref=f28e67]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3DODf0mfpiwBoscooqsQazq08pssETgQ4DwCQAlrCa3mt3SYWNTBxFlmpo6uf1-jR7S6y3MOuFu__79-gzRYHnRJVU0RK1vKaO_hjLWqRBaw7wHCSqt1X3w0ddyzy8O_iMGGvUgGMvblqvjZHzlnaE4jIyLkvBDq7pybcsDmxRu2X5qNDAlhQ1L4AjAd2jNoFRDmwuxTUD_9u_S1Puc-JcjfrQSVT4F7L-OqcGXI0nAKVU73XJwI7M3GMcS3BFTNPhdUXmhX-fLJCq8iz7JH-xvphoQQ3_f73xMMTeJsXudV8TQK-qT0bREA6jK3_-imKGQAYjaxd6LpLMdTfUZyElIfFA9InIJGM9g416tMwUXhx6r7bZWMDiRxis0UEobJePmykg4JHBTjKDd_5dHDneCL416t89JVa5lYtWI5m1Yek8PJj-a6qIyjKCqee41TLS-rd4sk-0waEVou2TvzOiWulf14EJDmD8_pqMUYnR9TGodfp4qTEfDPMkgfDz8hKLleyUhwwcsBjSTzV8-8Ut8yk3pO3UWDs97feOAMuBtA1Tgq-B8T9j9Q_vJvjBT3RS
+                    - generic [ref=f28e75]:
+                      - generic:
+                        - generic:
+                          - generic: 2005 Chevrolet Express
+                          - generic: 2005 Chevrolet Express
+                      - generic [ref=f28e78]: ‎$8,799
+                      - generic [ref=f28e81]: Shop Now
+                - generic [ref=f28e83]:
+                  - link [ref=f28e84]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3Dhmavg79tXufvCJoduvJshlmzrogl3cYdsgDtWT-WJqyWHq-q1EB23GwYsJfcDifk42-BSth9vnJm3ZuLOQpCMGHRbR8MLSGJFqHaEsOSoBsMTYtMwmhFD1jl_Xbd_-uN9JQVRBCSWKX31Bs2iWSWLky0AlibYI6AaHhVrEoGhwxkjazaFCqauYRE9dThxglUJL4ZSc6TR5uV-uDJiAOI7lbACQPtfH8eP9X9UMDB8zWu1LO12z8dC32gDxq90oqYNo_I9eT7SCT6zunsAU1OcGcmam7nqJ_lsDrgeXLHIO5lA3UM_OyiO_QSAuke1Tj1-Vmxi_v7ypkFAiYj2icVOBUGeHYtgsFxS3KJ0PEq6Cn6zaSLR5dadE5gHr_4_gBi4YxS6cZo0JnY0hfvlzv2LvyhGQTuIW93CK4hzh2-ExzxdDRj_-Y7tjUUUZ2crDdPra39F5qbE_lRB6oKeq4A2Y5mPOlLVcUdXT61LX5cUKbMeH7-6pCd-v2W-uiPZXhUP2jxO5dlmkf5Oylk0RB3llcmo49tP0hjYZ7zW8BgAm2DzIeLN2eC9Qt7jRKGzHUP
+                  - link [ref=f28e85]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=L&ai=CW2DFfna_acjkKfCWkPIPm9u70A279KyFe82LhtXxD8CNtwEQASD9tJ6VAWDJ3vKNhKXgF8gBCagDAcgDAqoE5gFP0MZNdRLOl2rsWA5-OGW9jT4mvM1ydGN9OxcySmx3eX5Gp0BOnqd676VlCFvTYNKAeMJPM2DRMqIXGn7qdjqrN-g45pLePfar1stuVhYqdnV7GMmowPtYWoxlQX7yIKD-l5_i5iBuNH9P3UPaGKnYvrNRwFRjTJKFklrqOuVyZlHGuKLogj5UIlGQbfI9mSzKN12-7iSEHUfeyKIr6y4958DAMmccTFPF_b4ewWZ0-tS956CmqZHBy3umWJ8PbS3XJFXPOmZk8VcYmO_CF_62f_790xBprZGWc9_ywAWVFfM16isWFoAGs77Ow7fX8K2UAaAGIagHk9ixAqgHlNixAqgHldixAqgHpr4bqAeW2BuoB6qbsQKoB_-esQKoB9-fsQKoB62-sQKoB7_TsQLYBwDSCC0IgGEQATIIioKAgICAgAg6DoBAgMCAgICAqIACqIMQSL39wTpYiP7Z7tuykwP6CwIIAYAMAaoNAlVT6g0TCImf2u7bspMDFXALRAgdm-0O2ogOCdAVAYAXAbIXBBgMUAE&num=1&sig=AOD64_1U7gMCFg-MWn5c8iA-isFDN8bpbQ&client=ca-pub-1677597403311019&adurl=https%3A%2F%2Fus.creativecdn.com%2Fad%2Fclicks%3Ftk%3DODf0mfpiwBoscooqsQazq08pssETgQ4DwCQAlrCa3mt3SYWNTBxFlmpo6uf1-jR7S6y3MOuFu__79-gzRYHnRJVU0RK1vKaO_hjLWqRBaw7wHCSqt1X3w0ddyzy8O_iMGGvUgGMvblqvjZHzlnaE4jIyLkvBDq7pybcsDmxRu2X5qNDAlhQ1L4AjAd2jNoFRDmwuxTUD_9u_S1Puc-JcjfrQSVT4F7L-OqcGXI0nAKVU73XJwI7M3GMcS3BFTNPhdUXmhX-fLJCq8iz7JH-xvphoQQ3_f73xMMTeJsXudV8TQK-qT0bREA6jK3_-imKGQAYjaxd6LpLMdTfUZyElIfFA9InIJGM9g416tMwUXhx6r7bZWMDiRxis0UEobJePmykg4JHBTjKDd_5dHDneCL416t89JVa5lYtWI5m1Yek8PJj-a6qIyjKCqee41TLS-rd4sk-0waEVou2TvzOiWulf14EJDmD8_pqMUYnR9TGodfp4qTEfDPMkgfDz8hKLleyUhwwcsBjSTzV8-8Ut85L6GrKgJeGe48BiG3imB4tFqVUpenW8YO7cVhUkV0e3
+                    - generic [ref=f28e93]:
+                      - generic:
+                        - generic:
+                          - generic: 2019 Buick Cascada
+                          - generic: 2019 Buick Cascada
+                      - generic [ref=f28e96]: ‎$11,990
+                      - generic [ref=f28e99]: Shop Now
+  - insertion [ref=e127]:
+    - generic [ref=e129]:
+      - generic "These are topics related to the article that might interest you" [ref=e130]: Discover more
+      - link "Test case management" [ref=e131] [cursor=pointer]:
+        - img [ref=e133]
+        - text: Test case management
+      - link "Automation software solutions" [ref=e135] [cursor=pointer]:
+        - img [ref=e137]
+        - text: Automation software solutions
+      - link "Software" [ref=e139] [cursor=pointer]:
+        - img [ref=e141]
+        - text: Software
+      - link "Subscription management systems" [ref=e143] [cursor=pointer]:
+        - img [ref=e145]
+        - text: Subscription management systems
+      - link "Programming" [ref=e147] [cursor=pointer]:
+        - img [ref=e149]
+        - text: Programming
+      - link "Cybersecurity consulting services" [ref=e151] [cursor=pointer]:
+        - img [ref=e153]
+        - text: Cybersecurity consulting services
+      - link "Password manager apps" [ref=e155] [cursor=pointer]:
+        - img [ref=e157]
+        - text: Password manager apps
+      - link "Automation consulting services" [ref=e159] [cursor=pointer]:
+        - img [ref=e161]
+        - text: Automation consulting services
+      - link "Website analytics software" [ref=e163] [cursor=pointer]:
+        - img [ref=e165]
+        - text: Website analytics software
+  - generic:
+    - insertion:
+      - iframe [ref=e168]:
+        
+  - contentinfo [ref=e169]:
+    - generic:
+      - insertion:
+        - iframe [ref=e171]:
+          
+    - generic [ref=e176]:
+      - heading "Subscription" [level=2] [ref=e177]
+      - generic [ref=e178]:
+        - textbox "Your email address" [ref=e179]
+        - button "" [ref=e180] [cursor=pointer]:
+          - generic [ref=e181]: 
+        - paragraph [ref=e182]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e186]: Copyright © 2021 All rights reserved
+    - generic:
+      - insertion:
+        - iframe [ref=e188]:
+          
+  - link "" [ref=e189] [cursor=pointer]:
+    - /url: "#top"
+    - generic [ref=e190]: 
+  - insertion [ref=e192]:
+    - generic [ref=e194]:
+      - generic "These are topics related to the article that might interest you" [ref=e195]: Discover more
+      - link "Marketing automation platforms" [ref=e196] [cursor=pointer]:
+        - img [ref=e198]
+        - text: Marketing automation platforms
+      - link "Software testing tutorials" [ref=e200] [cursor=pointer]:
+        - img [ref=e202]
+        - text: Software testing tutorials
+      - link "API integration services" [ref=e204] [cursor=pointer]:
+        - img [ref=e206]
+        - text: API integration services
+      - link "Captcha services" [ref=e208] [cursor=pointer]:
+        - img [ref=e210]
+        - text: Captcha services
+      - link "Test automation tools" [ref=e212] [cursor=pointer]:
+        - img [ref=e214]
+        - text: Test automation tools
+      - link "Software testing services" [ref=e216] [cursor=pointer]:
+        - img [ref=e218]
+        - text: Software testing services
+      - link "Automation training courses" [ref=e220] [cursor=pointer]:
+        - img [ref=e222]
+        - text: Automation training courses
+      - link "Website design templates" [ref=e224] [cursor=pointer]:
+        - img [ref=e226]
+        - text: Website design templates
+      - link "Website development services" [ref=e228] [cursor=pointer]:
+        - img [ref=e230]
+        - text: Website development services
+  - generic [ref=e232]:
+    - generic [ref=e233] [cursor=pointer]:
+      - img [ref=e235]
+      - link "Go to shopping options for API testing tools" [ref=e237]: API testing tools
+    - button "Close shopping anchor" [ref=e238]
+```

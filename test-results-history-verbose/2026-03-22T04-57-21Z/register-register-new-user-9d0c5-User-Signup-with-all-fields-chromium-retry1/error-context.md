@@ -1,0 +1,361 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for practice automation" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for practice automation" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - heading "Enter Account Information" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Title
+          - generic [ref=e47]:
+            - radio "Mr." [checked] [ref=e49]
+            - text: Mr.
+          - generic [ref=e51]:
+            - radio "Mrs." [ref=e53]
+            - text: Mrs.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - text: Name
+            - superscript [ref=e56]: "*"
+          - textbox "Name *" [ref=e57]: Jonatanrnv
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - text: Email
+            - superscript [ref=e60]: "*"
+          - textbox "Email *" [disabled] [ref=e61]: jonatanrnv.qazcc+1774155402750@example.com
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - text: Password
+            - superscript [ref=e64]: "*"
+          - textbox "Password *" [ref=e65]: P@ssw0rd782
+        - generic [ref=e66]:
+          - generic [ref=e67]: Date of Birth
+          - generic [ref=e68]:
+            - combobox [ref=e71]:
+              - option "Day"
+              - option "1"
+              - option "2"
+              - option "3"
+              - option "4"
+              - option "5"
+              - option "6"
+              - option "7"
+              - option "8"
+              - option "9"
+              - option "10"
+              - option "11"
+              - option "12"
+              - option "13"
+              - option "14"
+              - option "15"
+              - option "16"
+              - option "17"
+              - option "18"
+              - option "19" [selected]
+              - option "20"
+              - option "21"
+              - option "22"
+              - option "23"
+              - option "24"
+              - option "25"
+              - option "26"
+              - option "27"
+              - option "28"
+              - option "29"
+              - option "30"
+              - option "31"
+            - combobox [ref=e74]:
+              - option "Month"
+              - option "January"
+              - option "February"
+              - option "March"
+              - option "April"
+              - option "May"
+              - option "June"
+              - option "July"
+              - option "August"
+              - option "September"
+              - option "October"
+              - option "November" [selected]
+              - option "December"
+            - combobox [ref=e77]:
+              - option "Year"
+              - option "2021"
+              - option "2020"
+              - option "2019"
+              - option "2018"
+              - option "2017"
+              - option "2016"
+              - option "2015"
+              - option "2014"
+              - option "2013"
+              - option "2012"
+              - option "2011"
+              - option "2010"
+              - option "2009"
+              - option "2008"
+              - option "2007"
+              - option "2006"
+              - option "2005"
+              - option "2004"
+              - option "2003"
+              - option "2002"
+              - option "2001"
+              - option "2000"
+              - option "1999"
+              - option "1998"
+              - option "1997"
+              - option "1996"
+              - option "1995"
+              - option "1994" [selected]
+              - option "1993"
+              - option "1992"
+              - option "1991"
+              - option "1990"
+              - option "1989"
+              - option "1988"
+              - option "1987"
+              - option "1986"
+              - option "1985"
+              - option "1984"
+              - option "1983"
+              - option "1982"
+              - option "1981"
+              - option "1980"
+              - option "1979"
+              - option "1978"
+              - option "1977"
+              - option "1976"
+              - option "1975"
+              - option "1974"
+              - option "1973"
+              - option "1972"
+              - option "1971"
+              - option "1970"
+              - option "1969"
+              - option "1968"
+              - option "1967"
+              - option "1966"
+              - option "1965"
+              - option "1964"
+              - option "1963"
+              - option "1962"
+              - option "1961"
+              - option "1960"
+              - option "1959"
+              - option "1958"
+              - option "1957"
+              - option "1956"
+              - option "1955"
+              - option "1954"
+              - option "1953"
+              - option "1952"
+              - option "1951"
+              - option "1950"
+              - option "1949"
+              - option "1948"
+              - option "1947"
+              - option "1946"
+              - option "1945"
+              - option "1944"
+              - option "1943"
+              - option "1942"
+              - option "1941"
+              - option "1940"
+              - option "1939"
+              - option "1938"
+              - option "1937"
+              - option "1936"
+              - option "1935"
+              - option "1934"
+              - option "1933"
+              - option "1932"
+              - option "1931"
+              - option "1930"
+              - option "1929"
+              - option "1928"
+              - option "1927"
+              - option "1926"
+              - option "1925"
+              - option "1924"
+              - option "1923"
+              - option "1922"
+              - option "1921"
+              - option "1920"
+              - option "1919"
+              - option "1918"
+              - option "1917"
+              - option "1916"
+              - option "1915"
+              - option "1914"
+              - option "1913"
+              - option "1912"
+              - option "1911"
+              - option "1910"
+              - option "1909"
+              - option "1908"
+              - option "1907"
+              - option "1906"
+              - option "1905"
+              - option "1904"
+              - option "1903"
+              - option "1902"
+              - option "1901"
+              - option "1900"
+        - generic [ref=e78]:
+          - checkbox "Sign up for our newsletter!" [checked] [ref=e79]
+          - text: Sign up for our newsletter!
+        - generic [ref=e80]:
+          - checkbox "Receive special offers from our partners!" [checked] [ref=e81]
+          - text: Receive special offers from our partners!
+        - heading "Address Information" [level=2] [ref=e82]
+        - paragraph [ref=e83]:
+          - generic [ref=e84]:
+            - text: First name
+            - superscript [ref=e85]: "*"
+          - textbox "First name *" [ref=e86]: Jonatanrnv
+        - paragraph [ref=e87]:
+          - generic [ref=e88]:
+            - text: Last name
+            - superscript [ref=e89]: "*"
+          - textbox "Last name *" [ref=e90]: QAzcc
+        - paragraph [ref=e91]:
+          - generic [ref=e92]: Company
+          - textbox "Company" [ref=e93]: Automation QA Ltd
+        - paragraph [ref=e94]:
+          - generic [ref=e95]:
+            - text: Address
+            - superscript [ref=e96]: "*"
+            - text: (Street address, P.O. Box, Company name, etc.)
+          - textbox "Address * (Street address, P.O. Box, Company name, etc.)" [ref=e97]: 953 Test Street
+        - paragraph [ref=e98]:
+          - generic [ref=e99]: Address 2
+          - textbox "Address 2" [ref=e100]: Second Test Street
+        - paragraph [ref=e101]:
+          - generic [ref=e102]:
+            - text: Country
+            - superscript [ref=e103]: "*"
+          - combobox "Country *" [ref=e104]:
+            - option "India"
+            - option "United States" [selected]
+            - option "Canada"
+            - option "Australia"
+            - option "Israel"
+            - option "New Zealand"
+            - option "Singapore"
+        - paragraph [ref=e105]:
+          - generic [ref=e106]:
+            - text: State
+            - superscript [ref=e107]: "*"
+          - textbox "State *" [ref=e108]: Test State
+        - paragraph [ref=e109]:
+          - generic [ref=e110]:
+            - text: City
+            - superscript [ref=e111]: "*"
+          - textbox "City * Zipcode *" [ref=e112]: Malaga
+        - paragraph [ref=e113]:
+          - generic [ref=e114]:
+            - text: Zipcode
+            - superscript [ref=e115]: "*"
+          - textbox [ref=e116]: "99463"
+        - paragraph [ref=e117]:
+          - generic [ref=e118]:
+            - text: Mobile Number
+            - superscript [ref=e119]: "*"
+          - textbox "Mobile Number *" [ref=e120]: "+349441098884"
+        - button "Create Account" [ref=e121] [cursor=pointer]
+    - insertion [ref=e123]:
+      - generic [ref=e126]:
+        - heading "These are topics related to the article that might interest you" [level=2] [ref=e128]: Discover more
+        - link "API documentation tools" [ref=e129] [cursor=pointer]:
+          - generic "API documentation tools" [ref=e130]
+          - img [ref=e132]
+        - link "Two factor authentication keys" [ref=e134] [cursor=pointer]:
+          - generic "Two factor authentication keys" [ref=e135]
+          - img [ref=e137]
+        - link "Website hosting plans" [ref=e139] [cursor=pointer]:
+          - generic "Website hosting plans" [ref=e140]
+          - img [ref=e142]
+  - contentinfo [ref=e144]:
+    - generic [ref=e149]:
+      - heading "Subscription" [level=2] [ref=e150]
+      - generic [ref=e151]:
+        - textbox "Your email address" [ref=e152]
+        - button "" [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]: 
+        - paragraph [ref=e155]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e159]: Copyright © 2021 All rights reserved
+  - link "" [ref=e160] [cursor=pointer]:
+    - /url: "#top"
+    - generic [ref=e161]: 
+  - insertion [ref=e162]:
+    - iframe [ref=e165]:
+      - generic [active] [ref=f22e1]:
+        - generic [ref=f22e6]:
+          - generic [ref=f22e7]:
+            - generic "topanswers.net" [ref=f22e9]:
+              - link "Upgrade Your Network" [ref=f22e10] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C1evNjXa_afa1JPKP8L0Pz_W5-Qju54aFhgGvzNHE0RWXwJza2g8QASD9tJ6VAWDJ3vKNhKXgF6AB1K-UrCrIAQGoAwHIA8sEqgTuAU_QqwOCOCCDgpYwKq1Vj6eUH7Bn7o3EBZz_ZQCe1VQ5OlTyfY0KFUo_fDQE4uuNfJ7myLFPH6itrmPFiOx5FxctTIcXGdk6evWKsdKMagv0CgJYJNqMj5TsEHRIK39qeIeT4FQaUW-cgJXdbScNExUseHMeZm9NRzsOyVDJX8A2L8nfFEwmNWj4kh3XMf4U3Z2l3UvakBP4-cljdpbjxxRYHrtYRrRi0w8xmswVIAh5mGd6uIQuwR4cSL-8RkzOBcCFuNsZMQgqCIWvNoQfCf9qj9MbqjYQZyrDE_t7pY1RXGKAM7DPJaOjpgaJMhzABIrnxLjVBYgFr47quE2AB9Tn5IsFqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggwCIBhEAEYnwMyCIqCgICAgIAIOg6AQIDAgICAgKiAAqiDEEi9_cE6WO-W6PXbspMDsQmrIXO0C0bhiIAKAZgLAcgLAaIMA5ABAaoNAlVTyA0B6g0TCOS16PXbspMDFfIHvAEdz3ouj_ANAogOCdgTDdAVAZgWAcoWAgoA-BYBgBcBshcCGAG6FwI4AbIYCRICxWgYASIBANAYAegYAcIZAggB&ae=1&gclid=EAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE&num=1&cid=CAQS0QEABaugfdfh3gQZW1oorx9MEse8Ddj0FTjtsiQfvi52myzLazCJ8kDIkbHTOmRXuiV0r6yM12VMbeHNvmtSneolMkn9GWzw_8VtL7K7Dhhe-ULrRNwezIgJodQLjPIAGRXNxAR3jxlfKRaFnZfJ4wz7RYQm3aKbOvVH2jIX-DirDxK2T_4cEIDDNpWOdjBsmMc496d1zMrP4SIVhjFrJ51ssxEbNSUehOQrA02G8jgvYmq6eI0b2_5dII6nSqIgEVpiJ8Rlp97SK3iy4OSFfZBSLxgB&sig=AOD64_2-ZAeRm3XR9NDmRV36RFFTt2BpAQ&client=ca-pub-1677597403311019&rf=1&nb=0&adurl=https://topanswers.net/top5%3Fq%3Dbest%2520phone%2520service%2520to%2520switch%2520to%26link_key%3De593681b2ad0618d1aa3e09b279c0152%26visitor_id%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE____www.automationexercise.com____20788709167_194734273418____1028458%26gad_source%3D5%26gad_campaignid%3D20788709167%26gclid%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE
+            - generic [ref=f22e11]:
+              - link "Find More best phone service to switch to. Get started now." [ref=f22e13] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C1evNjXa_afa1JPKP8L0Pz_W5-Qju54aFhgGvzNHE0RWXwJza2g8QASD9tJ6VAWDJ3vKNhKXgF6AB1K-UrCrIAQGoAwHIA8sEqgTuAU_QqwOCOCCDgpYwKq1Vj6eUH7Bn7o3EBZz_ZQCe1VQ5OlTyfY0KFUo_fDQE4uuNfJ7myLFPH6itrmPFiOx5FxctTIcXGdk6evWKsdKMagv0CgJYJNqMj5TsEHRIK39qeIeT4FQaUW-cgJXdbScNExUseHMeZm9NRzsOyVDJX8A2L8nfFEwmNWj4kh3XMf4U3Z2l3UvakBP4-cljdpbjxxRYHrtYRrRi0w8xmswVIAh5mGd6uIQuwR4cSL-8RkzOBcCFuNsZMQgqCIWvNoQfCf9qj9MbqjYQZyrDE_t7pY1RXGKAM7DPJaOjpgaJMhzABIrnxLjVBYgFr47quE2AB9Tn5IsFqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggwCIBhEAEYnwMyCIqCgICAgIAIOg6AQIDAgICAgKiAAqiDEEi9_cE6WO-W6PXbspMDsQmrIXO0C0bhiIAKAZgLAcgLAaIMA5ABAaoNAlVTyA0B6g0TCOS16PXbspMDFfIHvAEdz3ouj_ANAogOCdgTDdAVAZgWAcoWAgoA-BYBgBcBshcCGAG6FwI4AbIYCRICxWgYASIBANAYAegYAcIZAggB&ae=1&gclid=EAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE&num=1&cid=CAQS0QEABaugfdfh3gQZW1oorx9MEse8Ddj0FTjtsiQfvi52myzLazCJ8kDIkbHTOmRXuiV0r6yM12VMbeHNvmtSneolMkn9GWzw_8VtL7K7Dhhe-ULrRNwezIgJodQLjPIAGRXNxAR3jxlfKRaFnZfJ4wz7RYQm3aKbOvVH2jIX-DirDxK2T_4cEIDDNpWOdjBsmMc496d1zMrP4SIVhjFrJ51ssxEbNSUehOQrA02G8jgvYmq6eI0b2_5dII6nSqIgEVpiJ8Rlp97SK3iy4OSFfZBSLxgB&sig=AOD64_2-ZAeRm3XR9NDmRV36RFFTt2BpAQ&client=ca-pub-1677597403311019&rf=1&nb=7&adurl=https://topanswers.net/top5%3Fq%3Dbest%2520phone%2520service%2520to%2520switch%2520to%26link_key%3De593681b2ad0618d1aa3e09b279c0152%26visitor_id%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE____www.automationexercise.com____20788709167_194734273418____1028458%26gad_source%3D5%26gad_campaignid%3D20788709167%26gclid%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE
+              - link [ref=f22e14] [cursor=pointer]:
+                - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C1evNjXa_afa1JPKP8L0Pz_W5-Qju54aFhgGvzNHE0RWXwJza2g8QASD9tJ6VAWDJ3vKNhKXgF6AB1K-UrCrIAQGoAwHIA8sEqgTuAU_QqwOCOCCDgpYwKq1Vj6eUH7Bn7o3EBZz_ZQCe1VQ5OlTyfY0KFUo_fDQE4uuNfJ7myLFPH6itrmPFiOx5FxctTIcXGdk6evWKsdKMagv0CgJYJNqMj5TsEHRIK39qeIeT4FQaUW-cgJXdbScNExUseHMeZm9NRzsOyVDJX8A2L8nfFEwmNWj4kh3XMf4U3Z2l3UvakBP4-cljdpbjxxRYHrtYRrRi0w8xmswVIAh5mGd6uIQuwR4cSL-8RkzOBcCFuNsZMQgqCIWvNoQfCf9qj9MbqjYQZyrDE_t7pY1RXGKAM7DPJaOjpgaJMhzABIrnxLjVBYgFr47quE2AB9Tn5IsFqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggwCIBhEAEYnwMyCIqCgICAgIAIOg6AQIDAgICAgKiAAqiDEEi9_cE6WO-W6PXbspMDsQmrIXO0C0bhiIAKAZgLAcgLAaIMA5ABAaoNAlVTyA0B6g0TCOS16PXbspMDFfIHvAEdz3ouj_ANAogOCdgTDdAVAZgWAcoWAgoA-BYBgBcBshcCGAG6FwI4AbIYCRICxWgYASIBANAYAegYAcIZAggB&ae=1&gclid=EAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE&num=1&cid=CAQS0QEABaugfdfh3gQZW1oorx9MEse8Ddj0FTjtsiQfvi52myzLazCJ8kDIkbHTOmRXuiV0r6yM12VMbeHNvmtSneolMkn9GWzw_8VtL7K7Dhhe-ULrRNwezIgJodQLjPIAGRXNxAR3jxlfKRaFnZfJ4wz7RYQm3aKbOvVH2jIX-DirDxK2T_4cEIDDNpWOdjBsmMc496d1zMrP4SIVhjFrJ51ssxEbNSUehOQrA02G8jgvYmq6eI0b2_5dII6nSqIgEVpiJ8Rlp97SK3iy4OSFfZBSLxgB&sig=AOD64_2-ZAeRm3XR9NDmRV36RFFTt2BpAQ&client=ca-pub-1677597403311019&rf=1&nb=8&adurl=https://topanswers.net/top5%3Fq%3Dbest%2520phone%2520service%2520to%2520switch%2520to%26link_key%3De593681b2ad0618d1aa3e09b279c0152%26visitor_id%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE____www.automationexercise.com____20788709167_194734273418____1028458%26gad_source%3D5%26gad_campaignid%3D20788709167%26gclid%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE
+                - img [ref=f22e15]
+          - generic "topanswers.net" [ref=f22e17]:
+            - link "topanswers.net" [ref=f22e18] [cursor=pointer]:
+              - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C1evNjXa_afa1JPKP8L0Pz_W5-Qju54aFhgGvzNHE0RWXwJza2g8QASD9tJ6VAWDJ3vKNhKXgF6AB1K-UrCrIAQGoAwHIA8sEqgTuAU_QqwOCOCCDgpYwKq1Vj6eUH7Bn7o3EBZz_ZQCe1VQ5OlTyfY0KFUo_fDQE4uuNfJ7myLFPH6itrmPFiOx5FxctTIcXGdk6evWKsdKMagv0CgJYJNqMj5TsEHRIK39qeIeT4FQaUW-cgJXdbScNExUseHMeZm9NRzsOyVDJX8A2L8nfFEwmNWj4kh3XMf4U3Z2l3UvakBP4-cljdpbjxxRYHrtYRrRi0w8xmswVIAh5mGd6uIQuwR4cSL-8RkzOBcCFuNsZMQgqCIWvNoQfCf9qj9MbqjYQZyrDE_t7pY1RXGKAM7DPJaOjpgaJMhzABIrnxLjVBYgFr47quE2AB9Tn5IsFqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggwCIBhEAEYnwMyCIqCgICAgIAIOg6AQIDAgICAgKiAAqiDEEi9_cE6WO-W6PXbspMDsQmrIXO0C0bhiIAKAZgLAcgLAaIMA5ABAaoNAlVTyA0B6g0TCOS16PXbspMDFfIHvAEdz3ouj_ANAogOCdgTDdAVAZgWAcoWAgoA-BYBgBcBshcCGAG6FwI4AbIYCRICxWgYASIBANAYAegYAcIZAggB&ae=1&gclid=EAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE&num=1&cid=CAQS0QEABaugfdfh3gQZW1oorx9MEse8Ddj0FTjtsiQfvi52myzLazCJ8kDIkbHTOmRXuiV0r6yM12VMbeHNvmtSneolMkn9GWzw_8VtL7K7Dhhe-ULrRNwezIgJodQLjPIAGRXNxAR3jxlfKRaFnZfJ4wz7RYQm3aKbOvVH2jIX-DirDxK2T_4cEIDDNpWOdjBsmMc496d1zMrP4SIVhjFrJ51ssxEbNSUehOQrA02G8jgvYmq6eI0b2_5dII6nSqIgEVpiJ8Rlp97SK3iy4OSFfZBSLxgB&sig=AOD64_2-ZAeRm3XR9NDmRV36RFFTt2BpAQ&client=ca-pub-1677597403311019&rf=1&nb=1&adurl=https://topanswers.net/top5%3Fq%3Dbest%2520phone%2520service%2520to%2520switch%2520to%26link_key%3De593681b2ad0618d1aa3e09b279c0152%26visitor_id%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE____www.automationexercise.com____20788709167_194734273418____1028458%26gad_source%3D5%26gad_campaignid%3D20788709167%26gclid%3DEAIaIQobChMItrDo9duykwMV8ge8AR3Pei6PEAEYASAAEgK3uvD_BwE
+        - img [ref=f22e22] [cursor=pointer]
+        - button [ref=f22e25] [cursor=pointer]:
+          - img [ref=f22e26]
+        - iframe
+```
