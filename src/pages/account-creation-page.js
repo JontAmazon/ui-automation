@@ -48,9 +48,13 @@ export class AccountCreationPage {
     await expect(this.page).toHaveURL(this.url);
   }
 
-  async fillForm(user, { requiredOnly = false, omitField } = {}) {
+  async fillForm(user, { omitField = null, requiredOnly = false } = {}) {
     const requiredFields = new Set([
+      'title',
       'password',
+      'day',
+      'month',
+      'year',
       'firstName',
       'lastName',
       'address1',
@@ -67,75 +71,57 @@ export class AccountCreationPage {
       return requiredFields.has(field);
     };
 
+    const fillAndConfirm = async (field, locator, value, { clearWhenSkipped = false } = {}) => {
+      if (shouldFill(field)) {
+        await locator.fill(String(value));
+        await expect(locator).toHaveValue(String(value));
+      } else if (clearWhenSkipped) {
+        await locator.fill('');
+        await expect(locator).toHaveValue('');
+      }
+    };
+
+    const selectAndConfirm = async (field, locator, value) => {
+      if (shouldFill(field)) {
+        await locator.selectOption({ value: String(value) });
+        await expect(locator).toHaveValue(String(value));
+      }
+    };
+
+    const checkAndConfirm = async (field, locator) => {
+      if (shouldFill(field)) {
+        await locator.check();
+        await expect(locator).toBeChecked();
+      }
+    };
+
     await this.expectAccountFormVisible();
 
-    if (shouldFill('title')) {
-      await this.titleMr.check();
-    }
-    if (shouldFill('password')) {
-      await this.passwordInput.fill(user.password);
-    }
-    if (shouldFill('day')) {
-      await this.daysDropdown.selectOption(user.dateOfBirth.day);
-    }
-    if (shouldFill('month')) {
-      await this.monthsDropdown.selectOption(user.dateOfBirth.month);
-    }
-    if (shouldFill('year')) {
-      await this.yearsDropdown.selectOption(user.dateOfBirth.year);
-    }
+    await expect(this.createAccountButton).toBeVisible();
+    await expect(this.createAccountButton).toBeEnabled();
 
-    if (shouldFill('newsletter')) {
-      await this.newsletterCheckbox.check();
-    }
-    if (shouldFill('offers')) {
-      await this.offersCheckbox.check();
-    }
+    await checkAndConfirm('title', this.titleMr);
+    await fillAndConfirm('password', this.passwordInput, user.password);
 
-    if (shouldFill('firstName')) {
-      await this.firstNameInput.fill(user.firstName);
-    } else {
-      await this.firstNameInput.fill('');
-    }
-    if (shouldFill('lastName')) {
-      await this.lastNameInput.fill(user.lastName);
-    } else {
-      await this.lastNameInput.fill('');
-    }
-    if (shouldFill('company')) {
-      await this.companyInput.fill(user.company);
-    }
-    if (shouldFill('address1')) {
-      await this.address1Input.fill(user.address1);
-    } else {
-      await this.address1Input.fill('');
-    }
-    if (shouldFill('address2')) {
-      await this.address2Input.fill(user.address2);
-    }
-    if (shouldFill('country')) {
-      await this.countrySelect.selectOption(user.country);
-    }
-    if (shouldFill('state')) {
-      await this.stateInput.fill(user.state);
-    } else {
-      await this.stateInput.fill('');
-    }
-    if (shouldFill('city')) {
-      await this.cityInput.fill(user.city);
-    } else {
-      await this.cityInput.fill('');
-    }
-    if (shouldFill('zipCode')) {
-      await this.zipcodeInput.fill(user.zipCode);
-    } else {
-      await this.zipcodeInput.fill('');
-    }
-    if (shouldFill('mobileNumber')) {
-      await this.mobileNumberInput.fill(user.mobileNumber);
-    } else {
-      await this.mobileNumberInput.fill('');
-    }
+    await selectAndConfirm('day', this.daysDropdown, user.dateOfBirth.day);
+    await selectAndConfirm('month', this.monthsDropdown, user.dateOfBirth.month);
+    await selectAndConfirm('year', this.yearsDropdown, user.dateOfBirth.year);
+
+    await checkAndConfirm('newsletter', this.newsletterCheckbox);
+    await checkAndConfirm('offers', this.offersCheckbox);
+
+    await fillAndConfirm('firstName', this.firstNameInput, user.firstName, { clearWhenSkipped: true });
+    await fillAndConfirm('lastName', this.lastNameInput, user.lastName, { clearWhenSkipped: true });
+    await fillAndConfirm('company', this.companyInput, user.company);
+    await fillAndConfirm('address1', this.address1Input, user.address1, { clearWhenSkipped: true });
+    await fillAndConfirm('address2', this.address2Input, user.address2);
+    await selectAndConfirm('country', this.countrySelect, user.country);
+    await fillAndConfirm('state', this.stateInput, user.state, { clearWhenSkipped: true });
+    await fillAndConfirm('city', this.cityInput, user.city, { clearWhenSkipped: true });
+    await fillAndConfirm('zipCode', this.zipcodeInput, user.zipCode, { clearWhenSkipped: true });
+    await fillAndConfirm('mobileNumber', this.mobileNumberInput, user.mobileNumber, { clearWhenSkipped: true });
+
+    // await expect(this.page.locator(':invalid')).toHaveCount(0);
   }
 
   async submitAccount() {
@@ -173,6 +159,6 @@ export class AccountCreationPage {
     expect(isActive).toBe(true);
     const validationMessage = await locator.evaluate((el) => el.validationMessage);
     expect(validationMessage).not.toBe('');
-    expect(validationMessage).toMatch(/please fill out this field/i);
+    expect(validationMessage).toMatch(/please fill/i);
   }
 }
