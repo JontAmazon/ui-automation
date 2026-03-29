@@ -33,13 +33,22 @@ jobs:
           VALID_LOGIN_EMAIL: ${{ secrets.VALID_LOGIN_EMAIL }}
           VALID_LOGIN_PASSWORD: ${{ secrets.VALID_LOGIN_PASSWORD }}
           VALID_LOGIN_NAME: ${{ secrets.VALID_LOGIN_NAME }}
-        run: npx playwright test src/tests --reporter=json > results.json || true
+        run: npx playwright test src/tests || true
 
       - name: Upload results artifact (optional)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: results.json
+
+      - name: Upload artifact:Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 7
 
       - name: Commit results to results branch
         run: |
@@ -49,12 +58,8 @@ jobs:
           mkdir -p test-results-history
           DATE=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
           cp results.json test-results-history/${DATE}.json
-          
-          mkdir -p test-results-history-verbose
-          cp -r test-results test-results-history-verbose/${DATE}
 
           git status
           git add test-results-history
-          git add test-results-history-verbose
           git commit -m "Update Playwright results for ${DATE}" || echo "Nothing to commit"
           git push origin HEAD:results

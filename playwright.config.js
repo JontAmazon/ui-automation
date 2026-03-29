@@ -38,7 +38,11 @@ export default defineConfig({
   },
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
-  reporter: [['list'], ['html']],
+  reporter: [
+    ['list'],
+    ['json', { outputFile: 'results.json' }],
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+  ],
   use: {
     baseURL,
     trace: 'on-first-retry',

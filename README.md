@@ -8,8 +8,8 @@ Application under test: https://www.automationexercise.com/
 1. Register User
     - with all fields
     - with required fields only
-    - visible input alerts when required fields are missing
-    - with already existing email
+    - required fields missing --> visible input alerts
+    - already existing email
 2. Login:
     - with correct email and password
     - with incorrect email and password

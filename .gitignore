@@ -1,9 +1,13 @@
-node_modules
-playwright-report
-test-results
-reports
 .env
+
+notes/
+failed-tests-notes/
+
+node_modules
 npm-debug.log*
 .DS_Store
-notes/
 
+playwright-report
+test-results
+results.json
+reports
