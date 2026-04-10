@@ -1,0 +1,470 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/ui-automation/ui-automation/playwright.config.js",
+    "rootDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/ui-automation/commit/0595aed401d7def7e51d74bff6de6dab4994649e",
+        "commitHash": "0595aed401d7def7e51d74bff6de6dab4994649e",
+        "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/24228009392"
+      },
+      "gitCommit": {
+        "shortHash": "bd350a4",
+        "hash": "bd350a4b4925f8889d6cd7e637a448e8ff8000c0",
+        "subject": "Update Playwright results for 2026-04-09T05-13-57Z",
+        "body": "Update Playwright results for 2026-04-09T05-13-57Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1775711637000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1775711637000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ui-automation/ui-automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/ui-automation/commit/0595aed401d7def7e51d74bff6de6dab4994649e",
+            "commitHash": "0595aed401d7def7e51d74bff6de6dab4994649e",
+            "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/24228009392"
+          },
+          "gitCommit": {
+            "shortHash": "bd350a4",
+            "hash": "bd350a4b4925f8889d6cd7e637a448e8ff8000c0",
+            "subject": "Update Playwright results for 2026-04-09T05-13-57Z",
+            "body": "Update Playwright results for 2026-04-09T05-13-57Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1775711637000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1775711637000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login/login-users.spec.js",
+      "file": "login/login-users.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login flows",
+          "file": "login/login-users.spec.js",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login User with correct email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4245,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:24.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-4522a10884e32aae6845",
+              "file": "login/login-users.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "Login User with incorrect email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2812,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:24.707Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f1fb8925c6b86d494749",
+              "file": "login/login-users.spec.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Logout User",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4089,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:27.918Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f79989c550ef7ae2f64e",
+              "file": "login/login-users.spec.js",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-existing-email.spec.js",
+      "file": "register/register-existing-email.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User with existing email",
+          "file": "register/register-existing-email.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should block registration when email already exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:29.352Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2629eb59c0379ebe2eb-c827c63ada62b6eb4284",
+              "file": "register/register-existing-email.spec.js",
+              "line": 16,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-new-user.spec.js",
+      "file": "register/register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User",
+          "file": "register/register-new-user.spec.js",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Signup with all fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 13682,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\u001b[2m    - waiting for\" https://www.automationexercise.com/signup\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.automationexercise.com/signup\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\u001b[2m    - waiting for\" https://www.automationexercise.com/signup\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.automationexercise.com/signup\"\u001b[22m\n\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at AccountCreationPage.fillForm (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:98:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:17:31",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                          "column": 42,
+                          "line": 44
+                        },
+                        "snippet": "   at ../pages/account-creation-page.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m   \u001b[36masync\u001b[39m expectAccountFormVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maccountInfoHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m   }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m   \u001b[36masync\u001b[39m expectOnPage() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                            "column": 42,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\u001b[2m    - waiting for\" https://www.automationexercise.com/signup\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://www.automationexercise.com/signup\"\u001b[22m\n\n\n   at ../pages/account-creation-page.js:44\n\n  42 |\n  43 |   async expectAccountFormVisible() {\n> 44 |     await expect(this.accountInfoHeader).toBeVisible();\n     |                                          ^\n  45 |   }\n  46 |\n  47 |   async expectOnPage() {\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at AccountCreationPage.fillForm (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:98:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:17:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:32.024Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                        "column": 42,
+                        "line": 44
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6764,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-04-10T05:29:46.357Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-d3e00976ee8cbfd47fb0",
+              "file": "register/register-new-user.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "Signup with required fields only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4823,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:33.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-f852308a07a1af789a00",
+              "file": "register/register-new-user.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "Visible input alerts when required fields are missing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4755,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T05:29:37.988Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-2c4893e3e9cdd1c9c0ca",
+              "file": "register/register-new-user.spec.js",
+              "line": 33,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-10T05:29:23.867Z",
+    "duration": 29880.592,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}
