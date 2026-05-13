@@ -74,3 +74,4 @@ npm run test:report
 ## CI
 
 GitHub Actions runs on every push and pull request. It installs dependencies, runs the Playwright suite, and uploads the HTML report as a build artifact.
+
