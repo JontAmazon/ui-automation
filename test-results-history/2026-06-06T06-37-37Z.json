@@ -1,0 +1,1468 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/ui-automation/ui-automation/playwright.config.js",
+    "rootDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/ui-automation/commit/fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+        "commitHash": "fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+        "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/27055079975"
+      },
+      "gitCommit": {
+        "shortHash": "831ff4a",
+        "hash": "831ff4a50cd202176cbff61dd5ed5a0eeb816a4a",
+        "subject": "Update Playwright results for 2026-06-05T07-12-18Z",
+        "body": "Update Playwright results for 2026-06-05T07-12-18Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1780643538000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1780643538000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ui-automation/ui-automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/ui-automation/commit/fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+            "commitHash": "fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+            "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/27055079975"
+          },
+          "gitCommit": {
+            "shortHash": "831ff4a",
+            "hash": "831ff4a50cd202176cbff61dd5ed5a0eeb816a4a",
+            "subject": "Update Playwright results for 2026-06-05T07-12-18Z",
+            "body": "Update Playwright results for 2026-06-05T07-12-18Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1780643538000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1780643538000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login/login-users.spec.js",
+      "file": "login/login-users.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login flows",
+          "file": "login/login-users.spec.js",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login User with correct email and password",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 24398,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:33:10.303Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10995,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:33:35.650Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 23191,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:33:47.376Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-7041e--correct-email-and-password-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-4522a10884e32aae6845",
+              "file": "login/login-users.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "Login User with incorrect email and password",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 24176,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:33:10.305Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 23831,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:33:35.444Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11043,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:34:00.505Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-fl-e5b02-ncorrect-email-and-password-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f1fb8925c6b86d494749",
+              "file": "login/login-users.spec.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Logout User",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 24096,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:34:11.372Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 42845,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/log\u001b[7min\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/log\u001b[7mout\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/logout\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/log\u001b[7min\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/log\u001b[7mout\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/logout\"\u001b[22m\n\n    at SignupLoginPage.expectOnPage (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:26:29)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/login/login-users.spec.js:42:31",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 29,
+                          "line": 26
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m expectOnPage() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[36masync\u001b[39m startSignup(user) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 29,
+                            "line": 26
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/log\u001b[7min\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/log\u001b[7mout\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/logout\"\u001b[22m\n\n\n   at ../pages/signup-login-page.js:26\n\n  24 |\n  25 |   async expectOnPage() {\n> 26 |     await expect(this.page).toHaveURL(this.url);\n     |                             ^\n  27 |   }\n  28 |\n  29 |   async startSignup(user) {\n    at SignupLoginPage.expectOnPage (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:26:29)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/login/login-users.spec.js:42:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:34:36.493Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 29,
+                        "line": 26
+                      }
+                    },
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 29599,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n\n    at NavBar.expectLoggedIn (/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js:11:38)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/login/login-users.spec.js:37:27",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                          "column": 38,
+                          "line": 11
+                        },
+                        "snippet": "   at ../components/nav-bar.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m expectLoggedIn() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloggedInLabel)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   }\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m   \u001b[36masync\u001b[39m expectLoggedInAs(name) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                            "column": 38,
+                            "line": 11
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n\n\n   at ../components/nav-bar.js:11\n\n   9 |\n  10 |   async expectLoggedIn() {\n> 11 |     await expect(this.loggedInLabel).toBeVisible();\n     |                                      ^\n  12 |   }\n  13 |\n  14 |   async expectLoggedInAs(name) {\n    at NavBar.expectLoggedIn (/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js:11:38)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/login/login-users.spec.js:37:27"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:35:20.328Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/login-login-users-Login-flows-Logout-User-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                        "column": 38,
+                        "line": 11
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f79989c550ef7ae2f64e",
+              "file": "login/login-users.spec.js",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-existing-email.spec.js",
+      "file": "register/register-existing-email.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User with existing email",
+          "file": "register/register-existing-email.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should block registration when email already exists",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11030,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:34:12.261Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 22991,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:34:23.997Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 22787,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:34:47.886Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-existing-c8c8d-n-when-email-already-exists-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a2629eb59c0379ebe2eb-c827c63ada62b6eb4284",
+              "file": "register/register-existing-email.spec.js",
+              "line": 16,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-new-user.spec.js",
+      "file": "register/register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User",
+          "file": "register/register-new-user.spec.js",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Signup with all fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11006,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:35:11.389Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    },
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 30813,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at AccountCreationPage.fillForm (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:98:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:17:31",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                          "column": 42,
+                          "line": 44
+                        },
+                        "snippet": "   at ../pages/account-creation-page.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m   \u001b[36masync\u001b[39m expectAccountFormVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maccountInfoHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m   }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m   \u001b[36masync\u001b[39m expectOnPage() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                            "column": 42,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\n\n   at ../pages/account-creation-page.js:44\n\n  42 |\n  43 |   async expectAccountFormVisible() {\n> 44 |     await expect(this.accountInfoHeader).toBeVisible();\n     |                                          ^\n  45 |   }\n  46 |\n  47 |   async expectOnPage() {\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at AccountCreationPage.fillForm (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:98:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:17:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:35:23.100Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                        "column": 42,
+                        "line": 44
+                      }
+                    },
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 24406,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:35:54.815Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-d3e00976ee8cbfd47fb0",
+              "file": "register/register-new-user.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "Signup with required fields only",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 51548,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected substring: \u001b[32m\"Jonatancye\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected substring: \u001b[32m\"Jonatancye\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n\n    at NavBar.expectLoggedInAs (/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js:15:38)\n    at AccountCreatedPage.verifySignupSuccessful (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:30:23)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:29:5",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                          "column": 38,
+                          "line": 15
+                        },
+                        "snippet": "   at ../components/nav-bar.js:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m   \u001b[36masync\u001b[39m expectLoggedInAs(name) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloggedInLabel)\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   }\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   \u001b[36masync\u001b[39m expectNotLoggedInAs(name) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                            "column": 38,
+                            "line": 15
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('li').filter({ hasText: 'Logged in as' })\nExpected substring: \u001b[32m\"Jonatancye\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('li').filter({ hasText: 'Logged in as' })\u001b[22m\n\n\n   at ../components/nav-bar.js:15\n\n  13 |\n  14 |   async expectLoggedInAs(name) {\n> 15 |     await expect(this.loggedInLabel).toContainText(name);\n     |                                      ^\n  16 |   }\n  17 |\n  18 |   async expectNotLoggedInAs(name) {\n    at NavBar.expectLoggedInAs (/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js:15:38)\n    at AccountCreatedPage.verifySignupSuccessful (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:30:23)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:29:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:35:50.650Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/components/nav-bar.js",
+                        "column": 38,
+                        "line": 15
+                      }
+                    },
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 39714,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/\u001b[7maccount_created\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/\u001b[7msignup\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/signup\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/\u001b[7maccount_created\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/\u001b[7msignup\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/signup\"\u001b[22m\n\n    at AccountCreatedPage.expectOnPage (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:19:29)\n    at AccountCreatedPage.verifySignupSuccessful (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:27:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:29:30",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js",
+                          "column": 29,
+                          "line": 19
+                        },
+                        "snippet": "   at ../pages/account-created-page.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   \u001b[36masync\u001b[39m expectOnPage() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[36mcontinue\u001b[39m() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js",
+                            "column": 29,
+                            "line": 19
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.automationexercise.com/\u001b[7maccount_created\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.automationexercise.com/\u001b[7msignup\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    14 × unexpected value \"https://www.automationexercise.com/signup\"\u001b[22m\n\n\n   at ../pages/account-created-page.js:19\n\n  17 |\n  18 |   async expectOnPage() {\n> 19 |     await expect(this.page).toHaveURL(this.url);\n     |                             ^\n  20 |   }\n  21 |\n  22 |   async continue() {\n    at AccountCreatedPage.expectOnPage (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:19:29)\n    at AccountCreatedPage.verifySignupSuccessful (/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js:27:16)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:29:30"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:36:42.902Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-created-page.js",
+                        "column": 29,
+                        "line": 19
+                      }
+                    },
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10974,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:37:23.681Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-f852308a07a1af789a00",
+              "file": "register/register-new-user.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "Visible input alerts when required fields are missing",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 23763,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 85,
+                          "line": 21
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36masync\u001b[39m expectVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login to your account'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'New User Signup!'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   }\n \u001b[90m 24 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 85,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Login to your account' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Login to your account' })\u001b[22m\n\n\n   at ../pages/signup-login-page.js:21\n\n  19 |\n  20 |   async expectVisible() {\n> 21 |     await expect(this.page.getByRole('heading', { name: 'Login to your account' })).toBeVisible();\n     |                                                                                     ^\n  22 |     await expect(this.page.getByRole('heading', { name: 'New User Signup!' })).toBeVisible();\n  23 |   }\n  24 |\n    at SignupLoginPage.expectVisible (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:21:85)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:20:27)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T06:36:19.973Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 85,
+                        "line": 21
+                      }
+                    },
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11024,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 66,
+                          "line": 17
+                        },
+                        "snippet": "   at ../pages/home-page.js:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36masync\u001b[39m expectHomeVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m' Home'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#slider'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m   }\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 66,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: ' Home' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: ' Home' })\u001b[22m\n\n\n   at ../pages/home-page.js:17\n\n  15 |\n  16 |   async expectHomeVisible() {\n> 17 |     await expect(this.page.getByRole('link', { name: ' Home' })).toBeVisible();\n     |                                                                  ^\n  18 |     await expect(this.page.locator('#slider')).toBeVisible();\n  19 |   }\n  20 |\n    at HomePage.expectHomeVisible (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:17:66)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:18:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-06T06:36:44.449Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 66,
+                        "line": 17
+                      }
+                    },
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 30551,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:38:31",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                          "column": 42,
+                          "line": 44
+                        },
+                        "snippet": "   at ../pages/account-creation-page.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m   \u001b[36masync\u001b[39m expectAccountFormVisible() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39maccountInfoHeader)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m   }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m   \u001b[36masync\u001b[39m expectOnPage() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                            "column": 42,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'Enter Account Information' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Enter Account Information' })\u001b[22m\n\n\n   at ../pages/account-creation-page.js:44\n\n  42 |\n  43 |   async expectAccountFormVisible() {\n> 44 |     await expect(this.accountInfoHeader).toBeVisible();\n     |                                          ^\n  45 |   }\n  46 |\n  47 |   async expectOnPage() {\n    at AccountCreationPage.expectAccountFormVisible (/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js:44:42)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:38:31"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-06T06:36:56.223Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-969c2-required-fields-are-missing-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/account-creation-page.js",
+                        "column": 42,
+                        "line": 44
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-2c4893e3e9cdd1c9c0ca",
+              "file": "register/register-new-user.spec.js",
+              "line": 33,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-06T06:33:09.509Z",
+    "duration": 265282.054,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
