@@ -1,0 +1,571 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/ui-automation/ui-automation/playwright.config.js",
+    "rootDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/ui-automation/commit/fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+        "commitHash": "fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+        "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/27459754883"
+      },
+      "gitCommit": {
+        "shortHash": "f97c8c4",
+        "hash": "f97c8c4845cb86e2015bf97f3ca34970d8014644",
+        "subject": "Update Playwright results for 2026-06-12T07-28-06Z",
+        "body": "Update Playwright results for 2026-06-12T07-28-06Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1781249286000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1781249286000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/ui-automation/ui-automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/ui-automation/commit/fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+            "commitHash": "fdb22eb519a8b0cdaa3d62ef91ea232ed318896c",
+            "buildHref": "https://github.com/JontAmazon/ui-automation/actions/runs/27459754883"
+          },
+          "gitCommit": {
+            "shortHash": "f97c8c4",
+            "hash": "f97c8c4845cb86e2015bf97f3ca34970d8014644",
+            "subject": "Update Playwright results for 2026-06-12T07-28-06Z",
+            "body": "Update Playwright results for 2026-06-12T07-28-06Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1781249286000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1781249286000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/ui-automation/ui-automation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login/login-users.spec.js",
+      "file": "login/login-users.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login flows",
+          "file": "login/login-users.spec.js",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login User with correct email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7586,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:14.493Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-4522a10884e32aae6845",
+              "file": "login/login-users.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "Login User with incorrect email and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4190,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:14.488Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f1fb8925c6b86d494749",
+              "file": "login/login-users.spec.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Logout User",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:19.167Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "74ac0ad488ebd6e3e827-f79989c550ef7ae2f64e",
+              "file": "login/login-users.spec.js",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-existing-email.spec.js",
+      "file": "register/register-existing-email.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User with existing email",
+          "file": "register/register-existing-email.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should block registration when email already exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4038,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:22.572Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2629eb59c0379ebe2eb-c827c63ada62b6eb4284",
+              "file": "register/register-existing-email.spec.js",
+              "line": 16,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "register/register-new-user.spec.js",
+      "file": "register/register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register User",
+          "file": "register/register-new-user.spec.js",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Signup with all fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 31457,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.goto (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:12:21)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:17:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 21,
+                          "line": 12
+                        },
+                        "snippet": "   at ../pages/home-page.js:12\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptCookiesIfPresent()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 21,
+                            "line": 12
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/home-page.js:12\n\n  10 |\n  11 |   async goto() {\n> 12 |     await this.page.goto('/');\n     |                     ^\n  13 |     await this.acceptCookiesIfPresent();\n  14 |   }\n  15 |\n    at HomePage.goto (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:12:21)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:17:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:23.310Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 21,
+                        "line": 12
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6872,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-13T07:01:55.924Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-9d0c5-User-Signup-with-all-fields-chromium-retry1/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-d3e00976ee8cbfd47fb0",
+              "file": "register/register-new-user.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "Signup with required fields only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 29026,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Signup' })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"submit\" data-qa=\"signup-button\" class=\"btn btn-default\">Signup</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Signup' })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"submit\" data-qa=\"signup-button\" class=\"btn btn-default\">Signup</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at SignupLoginPage.startSignup (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:32:29)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:26:5",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                          "column": 29,
+                          "line": 32
+                        },
+                        "snippet": "   at ../pages/signup-login-page.js:32\n\n\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignupName\u001b[33m.\u001b[39mfill(user\u001b[33m.\u001b[39mfirstName)\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignupEmail\u001b[33m.\u001b[39mfill(user\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignupButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 33 |\u001b[39m   }\n \u001b[90m 34 |\u001b[39m\n \u001b[90m 35 |\u001b[39m   \u001b[36masync\u001b[39m login(user) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                            "column": 29,
+                            "line": 32
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Signup' })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"submit\" data-qa=\"signup-button\" class=\"btn btn-default\">Signup</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n\n   at ../pages/signup-login-page.js:32\n\n  30 |     await this.signupName.fill(user.firstName);\n  31 |     await this.signupEmail.fill(user.email);\n> 32 |     await this.signupButton.click();\n     |                             ^\n  33 |   }\n  34 |\n  35 |   async login(user) {\n    at SignupLoginPage.startSignup (/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js:32:29)\n    at /home/runner/work/ui-automation/ui-automation/src/tests/register/register-new-user.spec.js:26:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:01:26.639Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/signup-login-page.js",
+                        "column": 29,
+                        "line": 32
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 37967,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n    at HomePage.goto (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:12:21)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:17:20)",
+                        "location": {
+                          "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                          "column": 21,
+                          "line": 12
+                        },
+                        "snippet": "   at ../pages/home-page.js:12\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39macceptCookiesIfPresent()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                            "column": 21,
+                            "line": 12
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://www.automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ../pages/home-page.js:12\n\n  10 |\n  11 |   async goto() {\n> 12 |     await this.page.goto('/');\n     |                     ^\n  13 |     await this.acceptCookiesIfPresent();\n  14 |   }\n  15 |\n    at HomePage.goto (/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js:12:21)\n    at Object.openSignupLoginPage (/home/runner/work/ui-automation/ui-automation/src/tests/fixtures/test-fixtures.js:17:20)"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-13T07:01:56.495Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/ui-automation/ui-automation/test-results/register-register-new-user-b6892-p-with-required-fields-only-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/ui-automation/ui-automation/src/pages/home-page.js",
+                        "column": 21,
+                        "line": 12
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9581,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-06-13T07:02:35.496Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-f852308a07a1af789a00",
+              "file": "register/register-new-user.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "Visible input alerts when required fields are missing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4253,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-13T07:02:03.377Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cde8d85bc455167ac33b-2c4893e3e9cdd1c9c0ca",
+              "file": "register/register-new-user.spec.js",
+              "line": 33,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-13T07:01:13.691Z",
+    "duration": 91520.52,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 2
+  }
+}
